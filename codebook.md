@@ -33,7 +33,7 @@
 * Combined the test and training data together X_test,X_train
 * Combined subject_test and subject_train 
 * Combined Y_test,Y_train, and added column with activity name by merge with activity_labels.txt and added activity number to combined data
-* Take all columns with mean and standard deviation in the name
+* Take all columns with mean and standard deviation in the name from features.txt
 * Combined the previous data into one dataset
 * Added column with subject number combining subject_test and subject_train to the combined data
 * Clean variable names by removing paranthesis, trailing underscore, replace - with _,remove white space, remove commas, remove trailing paranthesis
