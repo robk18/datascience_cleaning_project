@@ -1,4 +1,4 @@
-clean_uci_data<-function(type="both"){
+clean_uci_data<-function(type="meanofmeans"){
 #setwd("./r_working_dir")
 
 #Get Features Data and read into R
