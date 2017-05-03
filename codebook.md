@@ -1,22 +1,26 @@
-####Taken from UCI HAR Dataset 
-###Acknowdlegements
+#### Taken from UCI HAR Dataset 
+
+### Acknowdlegements
 *1 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
 *This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.*
 *Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.*
 
-#Modified Code Book
-##Mofifications
+# Modified Code Book
 
-###Added Variables
-*see variables.txt _Mean of each standard deviation and mean data from combined dataset
-*subject_num - the subject number for training and test combined
-*activity_num - activity identification number from Y_test and Y_train
-*activity_name - Name of activity corresponding to activity number from activity_labels.txt
+## Modifications
 
-###Data
-*Output of mean of mean and standard deviation data from combined data
-*Output of mean and standard deviation data with added columns of activity and subject number
-*Original Data used 
+### Added Variables
+
+* see variables.txt _Mean of each standard deviation and mean data from combined dataset
+* subject_num - the subject number for training and test combined
+* activity_num - activity identification number from Y_test and Y_train
+* activity_name - Name of activity corresponding to activity number from activity_labels.txt
+
+### Data
+
+* Output of mean of mean and standard deviation data from combined data
+* Output of mean and standard deviation data with added columns of activity and subject number
+* Original Data used 
 	* 'features.txt': List of all features.
 	* 'activity_labels.txt': Links the class labels with their activity name.
 	* 'train/X_train.txt': Training set.
@@ -24,18 +28,19 @@
 	* 'test/X_test.txt': Test set.
 	* 'test/y_test.txt': Test labels.
 
-###Transformations 
-*Combined the test and training data together X_test,X_train
-*Combined subject_test and subject_train 
-*Combined Y_test,Y_train, and added column with activity name by merge with activity_labels.txt and added activity number to combined data
-*Take all columns with mean and standard deviation in the name
-*Combined the previous data into one dataset
-*Added column with subject number combining subject_test and subject_train to the combined data
-*Clean variable names by removing paranthesis, trailing underscore, replace - with _,remove white space, remove commas, remove trailing paranthesis
-*Take the mean of all variables by activity_name and subject_num and Added _Mean
+### Transformations 
+
+* Combined the test and training data together X_test,X_train
+* Combined subject_test and subject_train 
+* Combined Y_test,Y_train, and added column with activity name by merge with activity_labels.txt and added activity number to combined data
+* Take all columns with mean and standard deviation in the name
+* Combined the previous data into one dataset
+* Added column with subject number combining subject_test and subject_train to the combined data
+* Clean variable names by removing paranthesis, trailing underscore, replace - with _,remove white space, remove commas, remove trailing paranthesis
+* Take the mean of all variables by activity_name and subject_num and Added _Mean
 
 
-###Folowing is the original Codebook
+### Folowing is the original Codebook
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
