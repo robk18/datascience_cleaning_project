@@ -15,7 +15,16 @@
 * subject_num - the subject number for training and test combined
 * activity_num - activity identification number from Y_test and Y_train
 * activity_name - Name of activity corresponding to activity number from activity_labels.txt
-
+* Units for the variables
+    * The acceleration signal from the smartphone accelerometer X,Y,Z axis in standard gravity units 'g'.
+	* The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+	* The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second
+	* gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+	* body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+    * body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+    * Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+    * Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
+	
 ### Data
 
 * Output of mean of mean and standard deviation data from combined data
